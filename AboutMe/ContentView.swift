@@ -17,6 +17,14 @@ struct ContentView: View {
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .foregroundColor(Color("forest"))
+                    .padding(.top)
+                Image("bunny")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .cornerRadius(15)
+                    .padding()
+                Text("Small animal lover!!")
+                    .foregroundColor(Color("forest"))
                 HStack(spacing: 20){
                     Image("maple")
                         .resizable(resizingMode: .stretch)
@@ -32,28 +40,24 @@ struct ContentView: View {
                 } //HStack
                 HStack(spacing: 100) {  Text("Canadian")
                         .font(.title2)
+                        .foregroundColor(Color("forest"))
                         .multilineTextAlignment(.leading)
                         .padding([.leading, .bottom])
                     Text("Lynbrook")
                             .font(.title2)
+                            .foregroundColor(Color("forest"))
                             .multilineTextAlignment(.leading)
                             .padding(.trailing)
                     
                 } //endHStack
                 HStack {
                     Text("I'm a Canadian citizen :)")
+                        .foregroundColor(Color("forest"))
                         .padding(.horizontal)
                     Spacer()
                     Text("I go to Lynbrook high school! I'll be entering my Sophmore year")
+                        .foregroundColor(Color("forest"))
                         .padding(.horizontal)
-                }
-                Text("Things I Like")
-                                        .font(.title)
-                                        .fontWeight(.bold)
-                                        .foregroundColor(Color("forest"))
-                                        .padding(.top)
-                HStack{
-                    
                 }
                 
                 
@@ -63,7 +67,7 @@ struct ContentView: View {
             .padding(.all)//endsVStack
             .background(Rectangle()
                 .padding(.all)
-                .foregroundColor(.jade))
+                .foregroundColor(.palegreen))
                 .cornerRadius(65)
             
         }//endZStAck
